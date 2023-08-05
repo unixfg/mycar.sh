@@ -1,0 +1,59 @@
+/* Reset and Global Styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #0F0;
+  font-family: monospace;
+}
+
+#consoleContainer, #output, #cmdline, #prompt {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* Console Container */
+#consoleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Output Styles */
+#output {
+  white-space: pre-wrap;
+  word-break: normal;
+  width: 100%;
+}
+
+/* Input Styles */
+#cmdline {
+  font-family: monospace; /* Use a monospace font */
+  white-space: pre-wrap;  /* Wrap text and preserve white spaces */
+  width: 500px;           /* Adjust this value as needed */
+  overflow: hidden;       /* Hide any overflowing content */
+  border: none;           /* Remove border for aesthetics */
+  background: transparent;/* Transparent background to match the terminal look */
+  outline: none;          /* Remove the focus outline for aesthetics */
+  color: inherit;         /* Inherit the terminal text color */
+}
+
+/* Input Line Styling */
+#inputLine {
+  display: flex;
+  align-items: center;
+}
+
+#prompt {
+  display: inline;
+  margin-right: 7px;  /* Futile effort to make this a space wide */
+  align-self: center;
+}
+
+/* Alignments */
+#inputLine span, #inputLine input {
+  vertical-align: center;
+  align-self: center;
+}
